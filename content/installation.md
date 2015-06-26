@@ -51,10 +51,10 @@ l'ordinateur.
 Puisque nous sommes encore sur notre ordinateur de bureau, nous pouvons utiliser
 des outils graphiques, par exemple [UNetbootin](http://unetbootin.sourceforge.net)
 (disponible pour Microsoft Windows et GNU/Linux). Comme le montre la figure
-4-1 il vous suffit de sélectionner la distribution souhaitée
+3-1 il vous suffit de sélectionner la distribution souhaitée
 et le support de destination.
 
-![](images/unetbootin.png "Figure 4-1. UNetbootin")
+![](images/unetbootin.png "Figure 3-1. UNetbootin")
 
 Ou vous pouvez utiliser la ligne de commande (sous GNU/Linux) en téléchargeant
 l'image [boot.img.gz](http://http.us.debian.org/debian/dists/stable/main/installer-i386/current/images/hd-media/boot.img.gz)
@@ -185,21 +185,21 @@ suivante :
 ## Installation {#installation}
 
 Quelle que soit la méthode d’installation que vous avez choisi, une fois
-redémarré, vous arrivez devant l'écran présenté à la figure 4-2, choisissez
+redémarré, vous arrivez devant l'écran présenté à la figure 3-2, choisissez
 simplement la première entrée du menu.
 
-![](images/installation/01.png "Figure 4-2. Début de l'installation")
+![](images/installation/01.png "Figure 3-2. Début de l'installation")
 
 Il vous est alors demandé de choisir votre langue, le français, puis votre pays,
 dans mon cas la France.
 
-![](images/installation/02.png "Figure 4-3 Choix de la langue")
+![](images/installation/02.png "Figure 3-3 Choix de la langue")
 ![](images/installation/03.png)
 
 Selon vos choix précédent, la disposition du clavier est déjà présélectionner,
 pour un clavier azerty, le choix *Français* s'impose.
 
-![](images/installation/04.png "Figure 4-4 Choix de la disposition du clavier")
+![](images/installation/04.png "Figure 3-4 Choix de la disposition du clavier")
 
 Après le chargement de quelques composants et la détection automatique du
 réseau, il vous est demandé le nom de la machine. Choisissez un nom unique qui
@@ -209,23 +209,23 @@ de domaine](dns.md#ndd) pour plus d'information) vous pouvez le renseigner dans
 l'écran suivant, ou simplement le laisser vide.
 
 ![](images/installation/05.png)
-![](images/installation/06.png "Figure 4-6 Configuration du réseau")
+![](images/installation/06.png "Figure 3-6 Configuration du réseau")
 ![](images/installation/07.png)
 
 Après l'installation du système de base, l’intalleur vous demande un mot de
-passe pour le compte `root` (figure 4-10). Je préfère opter pour un mot de passe
+passe pour le compte `root` (figure 3-10). Je préfère opter pour un mot de passe
 vide (appuyez simplement sur `enter`). Ceci désactivera le compte `root` et
 donnera les droits administrateur temporaires via la commande `sudo` au premier
 compte utilisateur créé (à l’étape suivante).
 
-![](images/installation/08.png "Figure 4-5 Choix du mot de passe root")
+![](images/installation/08.png "Figure 3-5 Choix du mot de passe root")
 ![](images/installation/09.png)
 
 Passons donc à la création du premier utilisateur du système. Vous devez
-renseigner votre nom complet (figure 4-11) ainsi que l'identifiant qui vous
+renseigner votre nom complet (figure 3-11) ainsi que l'identifiant qui vous
 permettra de vous connecter.
 
-![](images/installation/10.png "Figure 4-11 Création d'un nouvel utilisateur")
+![](images/installation/10.png "Figure 3-11 Création d'un nouvel utilisateur")
 ![](images/installation/11.png)
 
 Cette utilisateur est critique puisqu’il possède des droits d’administration. Il
@@ -233,10 +233,10 @@ est important de prendre quelques minutes pour choisir un bon mot de passe. Je
 vous laisse vous reporter à l’[annexe](annexes/mdp.md) pour quelques conseils à
 ce sujet.
 
-![](images/installation/12.png "Figure 4-12 Choix du mot de passe")
+![](images/installation/12.png "Figure 3-12 Choix du mot de passe")
 ![](images/installation/13.png)
 
-![](images/installation/14.png "Figure 4-14 Détection des disques durs")
+![](images/installation/14.png "Figure 3-14 Détection des disques durs")
 
 Ensuite l'installeur détecte automatiquement les disques durs présents et vous
 propose différentes méthodes de partionnement. Le partionnement consiste à
@@ -247,11 +247,11 @@ permet une gestion plus souple des partitions en regroupant plusieurs disques
 durs, en facilitant le redimensionnement des partitions, … Cela n'est
 pas justifié dans notre cas.
 
-![](images/installation/15.png "Figure 4-15 Méthode de partitionnement")
+![](images/installation/15.png "Figure 3-15 Méthode de partitionnement")
 
 Il suffit de sélectionner notre unique disque.
 
-![](images/installation/16.png "Figure 4-16 Choix du disque à partitionner")
+![](images/installation/16.png "Figure 3-16 Choix du disque à partitionner")
 
 L'installeur vous propose plusieurs possibilités de partionnement, dans le cas
 d'un serveur, le dernier choix semble le plus judicieux puiqu'il nous permet
@@ -283,24 +283,24 @@ que j'en ai (simplement stocker les applications propres à chaque utilisateur).
 Il faudrait que je me penche sur une solution pour déporter les bases de données
 dans le répertoire de chaque utilisateur.
 
-![](images/installation/17.png "Figure 4-17 Choix du schéma de partitionnement")
+![](images/installation/17.png "Figure 3-17 Choix du schéma de partitionnement")
 
 Vérifiez les informations avant de confirmer le partitionnement.
 
 <!--
-![](images/installation/18.png "Figure 4-18 Confirmation du partionnage")
+![](images/installation/18.png "Figure 3-18 Confirmation du partionnage")
 ![](images/installation/19.png)
 -->
 
 <!--
-![](images/installation/20.png "Figure 4-20 Installation du système de base")
+![](images/installation/20.png "Figure 3-20 Installation du système de base")
 -->
 
-Encore une fois, il vous est demandé votre pays (figure 4-21) afin de vous
+Encore une fois, il vous est demandé votre pays (figure 3-21) afin de vous
 proposer le meilleur serveur pour télécharger les nouveaux logiciels à installer
 et les mise à jour. Les choix par défaut feront l'affaire.
 
-![](images/installation/21.png "Figure 4-21 Sélection du mirroir pour les paquets")
+![](images/installation/21.png "Figure 3-21 Sélection du mirroir pour les paquets")
 ![](images/installation/22.png)
 
 Vous pouvez renseigner un serveur mandataire HTTP, plus souvent appelé
@@ -308,26 +308,26 @@ Vous pouvez renseigner un serveur mandataire HTTP, plus souvent appelé
 laisser le champ vide et appuyez simplement sur `enter`.
 
 <!--
-![](images/installation/23.png "Figure 4-14 Configuration du mandataire HTTP")
+![](images/installation/23.png "Figure 3-14 Configuration du mandataire HTTP")
 ![](images/installation/24.png)
 ![](images/installation/25.png)
 -->
 
 L'étape suivante vous demande si vous souhaitez activer
-`popularity-contest` (figure 4-26). Il s'agit d'un outils
+`popularity-contest` (figure 3-26). Il s'agit d'un outils
 qui envoi régulièrement, de façon anonyme, la liste des paquets installés sur
 notre distribution. Vous pouvez visiter la page
 [*Debian Popularity Contest*](http://popcon.debian.org/) pour vous faire
 une idée de l'usage qui est fait de vos informations.
 
-![](images/installation/26.png "Figure 4-26 Configuration de popularity-contest")
+![](images/installation/26.png "Figure 3-26 Configuration de popularity-contest")
 
-La figure 4-27 vous propose des configurations pré-établies
+La figure 3-27 vous propose des configurations pré-établies
 afin d'installer automatiquement certains logiciels selon l'usage que vous
 souhaitez faire de votre ordinateur. Nous préférons n'en sélectionner aucune,
 nous installerons uniquement ce qui nous sera utile par la suite.
 
-![](images/installation/27.png "Figure 4-27 Sélection des logiciels")
+![](images/installation/27.png "Figure 3-27 Sélection des logiciels")
 <!--
 ![](images/installation/28.png)
 -->
@@ -335,7 +335,7 @@ nous installerons uniquement ce qui nous sera utile par la suite.
 Dernière étape de cette installation, l'installation d'un programme de démarrage.
 Ce programme est indispensable pour pouvoir démarrer.
 
-![](images/installation/29.png "Figure 4-29 Installation du programme de démarrage")
+![](images/installation/29.png "Figure 3-29 Installation du programme de démarrage")
 <!--
 ![](images/installation/30.png)
 -->
@@ -344,7 +344,7 @@ L'installation est maintenant terminée, vous pouvez retirez le support contenan
 l'installeur et redémarer.
 
 <!--
-![](images/installation/31.png "Figure 4-31 Fin de l'installation")
+![](images/installation/31.png "Figure 3-31 Fin de l'installation")
 ![](images/installation/32.png)
 -->
 
