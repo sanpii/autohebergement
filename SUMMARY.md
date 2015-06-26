@@ -3,6 +3,7 @@
 * [Pourquoi s’auto-héberger](content/introduction.md)
 * [Le matériel](content/materiel.md)
 * [Installation du système](content/installation.md)
+* [Premier redémarrage](content/reboot.md)
 * [Accès à distance](content/ssh.md)
 * [Serveur web](content/http.md)
 * [Transfert de fichier](content/ftp.md)
