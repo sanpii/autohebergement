@@ -6,7 +6,7 @@
 * [Premier redémarrage](content/reboot.md)
 * [Accès à distance](content/ssh.md)
 * [Serveur web](content/http.md)
-* [Transfert de fichier](content/ftp.md)
+* [Transfert de fichiers](content/ftp.md)
 * [Mail](content/mail.md)
 * [Nom de domaine](content/dns.md)
 * [Moteur de recherche](content/seeks.md)
