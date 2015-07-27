@@ -235,6 +235,9 @@ services :
 * [Owncloud](https://owncloud.com/) : synchronisation des fichiers, contacts et
   agenda.
 
+> ***note*** Pour une liste plus complète, vous pouvez parcourir [Awesome
+> Selfhosted](https://github.com/Kickball/awesome-selfhosted#awesome-selfhosted).
+
 Vous pouvez vous reporter aux annexes pour un [exemple
 d’installation](annexes/owncloud.md).
 
