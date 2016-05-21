@@ -36,7 +36,7 @@ Vous devriez vous retrouver avec un nouveau prompt qui porte le nom de votre
 serveur, par exemple :
 
 ```
-sanpi@handy:~$ ssh 192.168.51.4
+sanpi@handy:~$ ssh 192.0.2.4
 
 The programs included with the Debian GNU/Linux system are free software;
 the exact distribution terms for each program are described in the
@@ -44,7 +44,7 @@ individual files in /usr/share/doc/*/copyright.
 
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
-Last login: Sun Jun 21 18:18:40 2015 from 10.0.2.2
+Last login: Sun Jun 21 18:18:40 2015 from 192.0.2.2
 sanpi@debian:~$
 ```
 

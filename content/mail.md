@@ -117,7 +117,7 @@ Vous pouvez faire de même depuis votre ordinateur de bureau pour tester la
 réception de mail :
 
 ```
-$ mail sanpi@[192.168.1.42]
+$ mail sanpi@[192.0.2.42]
 Cc:
 Subject: Test
 Merci pour ce premier message.
@@ -126,13 +126,13 @@ Merci pour ce premier message.
 Ou, un peu plus compliqué, discuter directement avec le serveur via telnet :
 
 ```
-$ telnet 192.168.1.42 25
-Trying 192.168.1.42...
-Connected to 192.168.1.42.
+$ telnet 192.0.2.42 25
+Trying 192.0.2.42...
+Connected to 192.0.2.42.
 Escape character is '^]'.
 220 example.org ESMTP OpenSMTPD
 > HELO example.org
-250 example.org Hello example.org [192.168.1.42], pleased to meet you
+250 example.org Hello example.org [192.0.2.42], pleased to meet you
 > MAIL FROM: <sanpi@example.org>
 250 2.0.0: Ok
 > RCPT TO: <sanpi@example.org>
@@ -196,9 +196,9 @@ l'authentification avec le mot de passe en clair en décommentant l'option
 `disable\_plaintext\_auth` dans le fichier `/etc/dovecot/conf.d/10-auth.conf` :
 
 ```
-$ telnet 192.168.1.42 143
-Trying 192.168.1.42...
-Connected to 192.168.1.42.
+$ telnet 192.0.2.42 143
+Trying 192.0.2.42...
+Connected to 192.0.2.42.
 Escape character is '^]'.
 * OK [CAPABILITY IMAP4rev1 LITERAL+ SASL-IR LOGIN-REFERRALS ID ENABLE IDLE AUTH=PLAIN] Dovecot ready.
 x LOGIN guest 1234

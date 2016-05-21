@@ -145,19 +145,24 @@ Ensuite, il suffit d'ajouter ces quelques lignes à la fin du fichier
 `/etc/dhcp/dhcpd.conf` :
 
 ```
-subnet 192.168.0.0 netmask 255.255.255.0
+subnet 192.0.2.0 netmask 255.255.255.0
 {
-    range 192.168.0.10 192.168.0.20;
+    range 192.0.2.10 192.0.2.20;
     server-name "server";
-    next-server 192.168.0.1
+    next-server 192.0.2.1
     filename "/srv/tftp/debian-installer/amd64/pxelinux.0";
 }
 ```
 
-Nous déclarons un réseau privé `192.168.0.0/8` (c'est à dire contenant les
-adresses de `192.168.0.1` à `192.168.0.254`), avec une plage d'adresse attribuée
-automatiquement allant de `192.168.0.10` à `192.168.0.20`, l'adresse de notre
+Nous déclarons un réseau privé `192.0.2.0/24` (c'est à dire contenant les
+adresses de `192.0.2.1` à `192.0.2.254`), avec une plage d'adresse attribuée
+automatiquement allant de `192.0.2.10` à `192.0.2.20`, l'adresse de notre
 serveur et enfin un fichier à charger au démarrage de notre serveur.
+
+> **warning** Le sous-réseau `192.0.2.0/24` est dédié à la documentation ([RFC
+> 5737](https://tools.ietf.org/html/rfc5737)). Vous devez le remplacer par un
+> sous-réseau privé ([RFC 1918](https://tools.ietf.org/html/rfc1918)),
+> `192.168.0.0/24` par exemple.
 
 #### pxe {#preliminaires-reseau-pxe}
 
