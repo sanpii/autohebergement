@@ -1,0 +1,14 @@
+server {
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+    root /home/vagrant/public_html/test;
+    index index.php;
+
+    server_name _;
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php5-vagrant.sock;
+    }
+}

@@ -1,0 +1,3 @@
+- name: install nginx
+  become: true
+  apt: name=nginx state=present

@@ -1,0 +1,23 @@
+- name: install php
+  become: true
+  apt: name=php5-fpm state=present
+
+- name: install pgsql extension
+  become: true
+  apt: name=php5-pgsql state=present
+
+- name: copy php configuration
+  become: true
+  copy: src=php.ini dest=/etc/php5/mods-available/custom.ini
+
+- name: enable php confguration
+  become: true
+  file: src=/etc/php5/mods-available/custom.ini dest=/etc/php5/fpm/conf.d/99-custom.ini state=link
+
+- name: copy php pool
+  become: true
+  copy: src=pool.conf dest=/etc/php5/fpm/pool.d/vagrant.conf
+
+- name: reload php
+  become: true
+  service: name=php5-fpm state=reloaded
