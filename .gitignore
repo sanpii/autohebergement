@@ -1,3 +1,4 @@
 /node_modules/
+/provisioning/playbook.retry
 /_book/
 /.vagrant/
