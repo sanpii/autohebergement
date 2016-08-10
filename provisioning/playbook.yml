@@ -1,3 +1,4 @@
 - hosts: default
   roles:
     - common
+    - ssh

@@ -1,0 +1,15 @@
+- name: install ssh server
+  become: true
+  apt: name=openssh-server state=present
+
+- name: install ssh client
+  become: true
+  apt: name=openssh-client state=present
+
+- name: configure sshd
+  become: true
+  lineinfile: dest=/etc/ssh/sshd_config regexp='^#?PasswordAuthentication ' line='PasswordAuthentication no' state=present
+
+- name: restart ssh server
+  become: true
+  service: name=sshd state=reloaded
