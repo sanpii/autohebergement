@@ -9,18 +9,18 @@ besoin de faire des modifications sur votre serveur.
 
 ## Installation {#installation}
 
-Sous Debian le paquet se nomme `sshd` pour *ssh daemon* dont
+Sous Debian le paquet se nomme `openssh-server` pour *ssh daemon* dont
 l'installation s'effectue comme nous avons déjà dans le chapitre précédent :
 
 ```
-# apt-get install sshd
+# apt-get install openssh-server
 ```
 
-En plus du serveur, vous devez avoir la client `ssh` sur notre ordinateur
+En plus du serveur, vous devez avoir la client `openssh-client` sur notre ordinateur
 de bureau :
 
 ```
-# apt-get install ssh
+# apt-get install openssh-client
 ```
 
 Vous pouvez déjà tester que tout fonctionne bien en lançant la commande suivante
