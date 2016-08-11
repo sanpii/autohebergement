@@ -1,0 +1,23 @@
+- name: enable internal sftp
+  become: true
+  lineinfile: dest=/etc/ssh/sshd_config regexp='^Subsystem sftp' line='Subsystem sftp internal-sftp' state=present
+
+- name: limit sftp rights
+  become: true
+  blockinfile:
+    dest: /etc/ssh/sshd_config
+    block: |
+      Match Group sftp
+          ChrootDirectory %h
+          ForceCommand internal-sftp
+          AllowTcpForwarding no
+          PermitTunnel no
+          X11Forwarding no
+
+- name: restart ssh service
+  become: true
+  service: name=sshd state=reloaded
+
+- name: create sftp group
+  become: true
+  group: name=sftp state=present
