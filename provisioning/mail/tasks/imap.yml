@@ -1,0 +1,2 @@
+- name: install dovecot
+  apt: name=dovecot-imapd state=present

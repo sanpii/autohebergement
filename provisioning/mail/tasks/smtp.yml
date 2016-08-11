@@ -1,0 +1,23 @@
+- name: add jessie backports repository
+  become: true
+  apt_repository: repo='deb http://httpredir.debian.org/debian jessie-backports main contrib' state=present filename='backports'
+
+- name: intall opensmtpd
+  become: true
+  apt: name=opensmtpd state=present
+
+- name: copy opensmtpd configuration
+  become: true
+  copy: src=smtpd.conf dest=/etc/
+
+- name: copy aliases configuration
+  become: true
+  copy: src=aliases dest=/etc/
+
+- name: reload aliases
+  become: true
+  command: newaliases
+
+- name: intall mailutils
+  become: true
+  apt: name=mailutils state=present
